@@ -1,0 +1,400 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Medium.otf);
+}
+
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: "Avenir" !important;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.join-text-input, select#join-3, select#join-8, .login-text-input {
+  border-radius: 0.5vw;
+  border: 1px solid lightgrey;
+  padding: 0.5vw;
+  font-family: "Avenir";
+  outline: none;
+  resize: none;
+  overflow: auto;
+  text-align: center;
+  /* width: 17.5vw;
+  height: 2vw; */
+  height: 6vw;
+  width: 27vw;
+  font-size: 1.7vw;
+}
+
+
+.join-text-input, select#join-3, select#join-8, div#join-9 {
+  display:none;
+}
+
+.container, #home-logo { 
+  width: 50vw;
+  margin: 0 auto;
+}
+
+/*======= INDEX HOMEPAGE ========*/
+#home-container {
+  height: 100%;
+  background-image: radial-gradient(circle at 20% 20%, rgba(12.94%, 14.90%, 22.75%, 0.98) 0%, rgba(20.39%, 22.35%, 29.02%, 0.88) 80%), url(../img/jojoxbucciarati-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+#logo-index {
+  width: auto;
+  height: 4vw;
+  margin-top: 2vw;
+}
+
+#join-title, #home-subtitle, #login-title {
+  color: white;
+  text-align: center;
+}
+
+#home-title-h1 {
+  font-size: 5vw;
+  color: wheat;
+}
+
+#div-btn-connect {
+  margin-left: 2vw;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+button#btn-join, button#btn-connect {
+  font-size: 1.5vw;
+  width: 11vw;
+  background: wheat;
+}
+
+
+/* LOGIN PAGE */
+input#login-0, input#login-1 {
+  margin-bottom: 1vw;
+}
+
+div#login-content {
+  margin-top: 7vw;
+}
+
+img#logo-login {
+  height: 5vw;
+  margin-top: 2vw;
+}
+
+button#login-btn {
+  width: 25vw;
+  background: white;
+  height: fit-content;
+  font-size: 1.5vw;
+}
+
+button#login-btn:hover {
+  outline: none;
+  cursor: pointer;
+  background: wheat;
+  color: black;
+}
+
+/* JOIN PAGE */
+#join-container, #login-container {
+  height: 100vh;
+  max-height: 100vh;
+  background-image: radial-gradient(circle at 20% 20%, rgba(12.94%, 14.90%, 22.75%, 0.98) 0%, rgba(20.39%, 22.35%, 29.02%, 0.88) 80%), url(../img/join-jotaro-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+div#join-content {
+  margin-top: 7vw;
+}
+
+#join-title-h1, #login-title-h1 {
+  font-size: 3vw;
+}
+
+.error-input-msg {
+  margin: 0;
+  color: red;
+}
+
+#form-container {
+  text-align: center;
+}
+
+#p {
+  color: white;
+}
+
+div#join-9 {
+  color: white;
+  font-size: 1.5vw;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 1vw;
+}
+
+div#join-9 input[type="checkbox"] {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 1vw;
+}
+
+#join-2 {
+  user-select: none;
+}
+
+button#join-9-btn-submit {
+  margin-top: 2vw;
+  background: wheat;
+}
+
+/* =============REGISTER PAGE================= */
+
+#search-nav {
+  width: 100%;
+  color: white;
+  height: 3vw;
+  padding-top: .5vw;
+}
+
+#search-nav ul {
+  width: 100%;
+}
+
+#my-account {
+  float: right;
+}
+
+.nav-item {
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+
+/*======== USER ACCOUNT ==========*/
+
+div#main-user-account-container {
+  height: 100%;
+  background-image: url(../img/account-bg.jpg);
+  background-position: center;
+  display: none;
+  padding: 4vw;
+}
+
+button#go-back-to-research {
+  margin: 2vw;
+}
+
+div#user-container {
+  padding: 1vw 6vw 3vw;
+  background: white;
+  margin-top: 5vw;
+  border-radius: 1vw;
+  border: 1px solid lightgrey;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+div#user-result div {
+  margin-bottom: 0.4vw;
+}
+
+button#delete-account {
+  padding: 0.5vw;
+  background: darkred;
+  color: white;
+  margin-top: 2vw;
+}
+
+button#delete-account:hover {
+  background: red;
+  color: white;
+}
+
+button#btn-change-email, button#btn-change-pwd {
+  margin-left: 1vw;
+  padding: 0.2vw;
+  background: wheat;
+}
+
+.input-change-my-info {
+  padding: 0.3vw;
+  margin-left: 1vw;
+  border-radius: 0.3vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: 0.4px solid lightgrey;
+}
+
+input#my-new-email-verify {
+  padding: 0.3vw;
+  margin-left: 1vw;
+  border-radius: 0.3vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: 0.4px solid lightgrey;
+}
+
+/* =====SEARCH PAGE===== */
+#main-all-container {
+  display: flex;
+  height: 100%;
+}
+
+img#img-no-search-yet {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+div#main-search-page-container, div#main-result-page-container {
+  width: 50vw;
+  margin: 0;
+}
+
+div#main-search-page-container {
+  padding: 1vw 4vw;
+}
+
+div#main-result-page-container {
+  background: wheat;
+}
+
+h2#result-research-title {
+  text-align: center;
+  margin-top: 3vw;
+}
+
+div#result-container {
+  display: flex;
+  margin-top: 7vw;
+}
+
+div#result-research {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+div#arrow-right {
+  margin-right: 3vw;
+  margin-top: 3vw;
+}
+
+div#arrow-left {
+  margin-left: 3vw;
+  margin-top: 3vw;
+}
+
+img.arrow-img {
+  width: 4vw;
+  cursor: pointer;
+  user-select: none;
+}
+
+div#checkboxes {
+  display: flex;
+}
+
+div#search-city {
+  width: 50%;
+}
+
+div#search-hobbies {
+  width: 50%;
+}
+
+select#search-genre, select#search-age, div#checkboxes {
+  margin-bottom: 2vw;
+}
+
+select#search-genre, select#search-age {
+  border-radius: 0.25vw;
+  padding: 0.5vw;
+  font-size: 0.8vw;
+  font-family: 'Avenir';
+}
+
+p#error-no-results {
+  margin-top: 1vw;
+}
+
+div#checkboxes input {
+  margin-right: 1vw;
+}
+
+img#img-no-search-yet {
+  width: 20vw;
+}
+
+
+
+/* =====MENU===== */
+header {
+  display: flex;
+  height: 4vw;
+}
+
+#nav-menu-title{
+  font-size: 1vw;
+  padding-left: 1vw;
+  color: white;
+  font-family: 'Avenir';
+  height: 2.1vw;
+  margin: 0;
+  padding-top: 1.5vw;
+}
+
+div#logo-container {
+  position: absolute;
+  right: 0;
+  margin-right: 1vw;
+}
+
+img#logojojo-search {
+  height: 4vw;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+ /* ===BOUTONS==== */
+.btn {
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  background: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: 'Avenir';
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ebebd3;
+  background: grey;
+  outline: none;
+}
+
+.btn:active {
+  color: #1d3461;
+  background: #ebebd3;
+  outline: none;
+}
